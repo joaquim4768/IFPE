@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Usuário</title>
+</head>
+<body>
+    <table border="1">
+        <tr>
+            <td>
+                <form action="index.html" method="get">
+                <label for="inome">Nome:</label>
+                <input type="text" name="Nome" id="inome">
+                <br>
+
+                <label for="isexo">Sexo: </label>
+
+                <input type="radio" name="sexo" id="imas" value="Masculino">
+                <label for="imas">Masculino</label>
+                <input type="radio" name="sexo" id="ifem" value="Feminino">
+                <label for="ifem">Feminino</label>
+                <br>
+
+                <label for="iobs">Observações:</label><br>
+                <textarea name="obs" id="iobs"></textarea><br>
+
+                <label for="iemail">E-mail:</label>
+                <input type="email" name="email" id="iemail"><br>
+
+                <label for="isenha">Senha:&nbsp;</label>
+                <input type="password" name="senha" id="isenha"><br>
+
+                <label for="isenhaC">Confirmar Senha:</label>
+                <input type="password" name="senhaC" id="isenhaC"><br>
+
+                <button type="submit">Cadastrar</button>
+                <button type="reset">Limpar</button>
+                </form>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
