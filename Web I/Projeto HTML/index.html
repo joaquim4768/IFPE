@@ -6,19 +6,23 @@
     <title>Login</title>
 </head>
 <body>
+    <h1>Login</h1>
+    
     <table border="1">
         <tr>
             <td>
-                <label for="iusuario">Usuário:</label>
-                <input type="text" name="usuario" id="iusuario">
-                <br>
-                <label for="isenha">Senha:&nbsp;&nbsp;&nbsp;</label>
-                <input type="password" name="senha" id="isenha">
-                <br>
+                <form action="" method="get">
+                    <label for="iusuario">Usuário:</label>
+                    <input type="text" name="usuario" id="iusuario" required>
+                    <br>
+                    <label for="isenha">Senha:&nbsp;&nbsp;&nbsp;</label>
+                    <input type="password" name="senha" id="isenha" required>
+                    <br>
 
-                <button type="submit">Entrar</button>
-                <a href="recuperarSenha.html">Esqueceu a senha</a>
-                <a href="novoUsuario.html">Novo</a>
+                    <button type="submit">Entrar</button>
+                    <a href="recuperarSenha.html">Esqueceu a senha</a>
+                    <a href="novoUsuario.html">Novo</a>
+                </form>
             </td>
         </tr>
     </table>

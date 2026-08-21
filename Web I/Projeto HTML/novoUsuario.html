@@ -6,39 +6,56 @@
     <title>Cadastro de Usuário</title>
 </head>
 <body>
+    <h1>Novo Usuário</h1>
+
     <table border="1">
         <tr>
             <td>
-                <form action="index.html" method="get">
-                <label for="inome">Nome:</label>
-                <input type="text" name="Nome" id="inome">
-                <br>
+                <form action="index.html" method="get" id="form">
 
-                <label for="isexo">Sexo: </label>
+                    <label for="inome">Nome:</label>
+                    <input type="text" name="Nome" id="inome" required>
+                    <br>
 
-                <input type="radio" name="sexo" id="imas" value="Masculino">
-                <label for="imas">Masculino</label>
-                <input type="radio" name="sexo" id="ifem" value="Feminino">
-                <label for="ifem">Feminino</label>
-                <br>
+                    <label for="isexo">Sexo: </label>
 
-                <label for="iobs">Observações:</label><br>
-                <textarea name="obs" id="iobs"></textarea><br>
+                    <input type="radio" name="sexo" id="imas" value="Masculino" required>
+                    <label for="imas">Masculino</label>
+                    <input type="radio" name="sexo" id="ifem" value="Feminino">
+                    <label for="ifem">Feminino</label>
+                    <br>
 
-                <label for="iemail">E-mail:</label>
-                <input type="email" name="email" id="iemail"><br>
+                    <label for="iobs">Observações:</label><br>
+                    <textarea name="obs" id="iobs"></textarea><br>
 
-                <label for="isenha">Senha:&nbsp;</label>
-                <input type="password" name="senha" id="isenha"><br>
+                    <label for="iemail">E-mail:</label>
+                    <input type="email" name="email" id="iemail" required><br>
 
-                <label for="isenhaC">Confirmar Senha:</label>
-                <input type="password" name="senhaC" id="isenhaC"><br>
+                    <label for="isenha">Senha:&nbsp;</label>
+                    <input type="password" name="senha" id="isenha" minlength="8" required><br>
 
-                <button type="submit">Cadastrar</button>
-                <button type="reset">Limpar</button>
+                    <label for="isenhaC">Confirmar Senha:</label>
+                    <input type="password" name="senhaC" id="isenhaC" minlength="8" required><br>
+
+                    <button type="submit">Cadastrar</button>
+                    <button type="reset">Limpar</button>
+
                 </form>
             </td>
         </tr>
     </table>
+
+    <script>
+        var form = window.document.getElementById("form");
+        form.addEventListener("submit", enviar);
+
+        function enviar(event){
+            event.preventDefault();
+
+            window.alert("Senha enviada para o e-mail informado");
+
+            window.location.href = "index.html"
+        }
+    </script>
 </body>
 </html>
