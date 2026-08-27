@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+
+<body>
+    <form action="mensagem.html" method="get">
+        <fieldset>
+
+
+            <p>
+                <label for="itexto">Text box: </label>
+                <input type="text" name="" id="itexto" size="30" maxlength="12" minlength="6" placeholder="Digite aqui...">
+            </p>
+            <p>
+                <label for="isenha">Password:</label>
+                <input type="password" name="" id="isenha">
+            </p>
+            <p>
+                <label for="itextarea">Text Area:</label>
+                <textarea name="" id="itextarea" rows="10" cols="40">
+
+                </textarea>
+            </p>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Selected Text</legend>
+            <label for="idCampus">Campus</label>
+            <select name="" id="idCampus">
+                <option value="rec">Recife</option>
+                <option value="car">Caruaru</option>
+                <option value="jab" selected>Jaboatão dos Guararapes</option>
+            </select>
+
+            <p>
+                <label for="">Cursos:</label>
+                <input type="checkbox" name="" id="idCursoADS"><label for="idCursoADS">ADS</label>
+                <input type="checkbox" name="" id="idCursoIPI"><label for="idCursoIPI">IPI</label>
+                <input type="checkbox" name="" id="idCursoIntegrado"><label for="idCursoIntegrado">Integrado</label>
+            </p>
+
+            <p>
+                <label for="">Turnos:</label>
+                <input type="radio" name="turno" id="iDia"><label for="iDia">Dia</label>
+                <input type="radio" name="turno" id="iTarde"><label for="iTarde">Tarde</label>
+                <input type="radio" name="turno" id="iNoite"><label for="iNoite">Noite</label>
+            </p>
+        </fieldset>
+
+        <fieldset>
+            <legend>Buttons</legend>
+
+            <input type="reset" value="Reset">
+            <input type="submit" value="Submit">
+            <button onclick="alert('Cadastro realizado com sucesso!')">Cadastrar</button>
+            <button><img src="afaf.webp" alt="Botão"></button>
+        </fieldset>
+    </form>
+</body>
+
+</html>
