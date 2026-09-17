@@ -1,0 +1,53 @@
+
+:root{
+    --primario: #3B82F6;
+    --secundario: #1E293B;
+    --destaque: #F59E0B;
+    --fundo: #0F172A;
+    --texto: #F8FAFC;
+
+}
+
+body{
+    background-color: var(--fundo);
+    color: var(--texto);
+}
+
+table{
+    background-color: var(--primario);
+    margin: auto;
+}
+
+fieldset{
+    background-color: var(--primario);
+}
+
+table p, table input, table label{
+    color: black;
+}
+
+h1{
+    text-align: center;
+}
+h1, h2{
+    color: var(--destaque);
+}
+
+a{
+    color: var(--secundario);
+}
+
+a.detalhes{
+    color: var(--primario);
+}
+
+td.oculto{
+    color: var(--secundario);
+}
+
+p.trocado{
+    background-color: var(--texto);
+    color: var(--secundario);
+    padding: 5px;
+    border-radius: 5px;
+}
