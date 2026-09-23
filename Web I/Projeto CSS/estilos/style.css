@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
 :root{
     --primario: #3B82F6;
@@ -11,6 +13,7 @@
 body{
     background-color: var(--fundo);
     color: var(--texto);
+    font-family: "Roboto", sans-serif;
 }
 
 table{
@@ -28,9 +31,11 @@ table p, table input, table label{
 
 h1{
     text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
 }
 h1, h2{
     color: var(--destaque);
+    font-family: "Press Start 2P", system-ui;
 }
 
 a{
