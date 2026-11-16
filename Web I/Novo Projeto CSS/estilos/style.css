@@ -75,6 +75,13 @@ button[type="submit"]{
     border-radius: 8px;
     padding: 8px;
     font-weight: bold;
+
+    cursor: pointer;
+    transition: box-shadow .2s ease;
+}
+
+button[type="submit"]:hover{
+    box-shadow: 0 0 12px #F59E0B80
 }
 
 div.links a{
