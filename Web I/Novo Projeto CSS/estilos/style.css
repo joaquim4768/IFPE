@@ -67,8 +67,15 @@ form label{
     margin: 5px;
 }
 
+form input{
+    padding: 3px;
+    border-radius: 3px;
+    border: none;
+}
+
 button[type="submit"]{
-    margin: 10px 0px;
+    margin-top: 20px;
+    margin-bottom: 10px;
     background-color: var(--destaque);
 
     border: none;
@@ -77,7 +84,7 @@ button[type="submit"]{
     font-weight: bold;
 
     cursor: pointer;
-    transition: box-shadow .2s ease;
+    transition: box-shadow .3s ease;
 }
 
 button[type="submit"]:hover{
@@ -87,4 +94,9 @@ button[type="submit"]:hover{
 div.links a{
     color:var(--links);
     text-decoration: none;
+    transition: text-shadow .5s ease;
+}
+
+div.links a:hover{
+    text-shadow: 0 0 8px plum;
 }
