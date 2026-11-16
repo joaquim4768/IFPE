@@ -8,12 +8,26 @@
     <link rel="stylesheet" href="estilos/style.css">
 </head>
 <body>
-    <h1>Login</h1>
+    <header>
+        <h1>Login</h1>
+    </header>
 
-    
-    <form action="telaPrincipal.html">
+    <div class="container">
+        <form action="telaPrincipal.html" method="get">
+            <label for="iusuario">Usuário:</label>
+            <input type="text" name="usuario" id="iusuario" required>
 
-    </form>
+            <label for="isenha">Senha:</label>
+            <input type="password" name="senha" id="isenha" required>
 
+            <button type="submit">Entrar</button>
+            
+            <div class="links">
+                <a href="recuperarSenha.html">Esqueceu a senha</a>
+                <a href="novoUsuario.html">Novo</a>
+            </div>
+            
+        </form>
+    </div>
 </body>
 </html>

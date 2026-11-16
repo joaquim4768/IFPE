@@ -7,6 +7,8 @@
     --destaque: #F59E0B;
     --fundo: #0F172A;
     --texto: #F8FAFC;
+    --borda: #334155;
+    --links: #C4B5FD;
 }
 
 body{
@@ -16,7 +18,7 @@ body{
 }
 
 table{
-    background-color: var(--primario);
+    background-color: var(--secundario);
     margin: auto;
 }
 
@@ -25,7 +27,7 @@ fieldset{
 }
 
 table p, table input, table label{
-    color: black;
+    color: var(--texto);
 }
 
 h1{
