@@ -3,7 +3,6 @@
 
 /*----------------------------------------GLOBAL----------------------------------------------*/
 :root{
-    --primario: #3B82F6;
     --secundario: #1E293B;
     --destaque: #F59E0B;
     --fundo: #0F172A;
@@ -68,9 +67,19 @@ form label{
 }
 
 form input{
+    margin: 8px 0px;
     padding: 3px;
     border-radius: 3px;
     border: none;
+}
+
+textarea{
+    border-radius: 8px;
+    resize: vertical;
+    width: 100%;
+
+    min-height: 75px;
+    max-height: 180px;
 }
 
 button[type="submit"]{
@@ -91,6 +100,24 @@ button[type="submit"]:hover{
     box-shadow: 0 0 12px #F59E0B80
 }
 
+button[type="reset"]{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: var(--links);
+
+    border: none;
+    border-radius: 8px;
+    padding: 8px;
+    font-weight: bold;
+
+    cursor: pointer;
+    transition: box-shadow .3s ease;
+}
+
+button[type="reset"]:hover{
+    box-shadow: 0 0 12px #7f70b9
+}
+
 div.links a{
     color:var(--links);
     text-decoration: none;
@@ -100,3 +127,8 @@ div.links a{
 div.links a:hover{
     text-shadow: 0 0 8px plum;
 }
+
+div.radios{
+    padding-left: 10px;
+}
+

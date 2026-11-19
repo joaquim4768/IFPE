@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Usuário</title>
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="estilos/style.css">
+</head>
+<body>
+    <header>
+        <h1>Novo Usuário</h1>
+    </header>
+
+    <div class="container">
+        <form action="mensagemCadastro.html" method="get" id="form">
+
+            <label for="inome">Nome:</label>
+            <input type="text" name="Nome" id="inome" required>
+
+
+            <label for="isexo">Sexo: </label>
+
+            <div class="radios">
+                <input type="radio" name="sexo" id="imas" value="Masculino" required>
+                <label for="imas">Masculino</label>
+            </div>
+            <div class="radios">
+                <input type="radio" name="sexo" id="ifem" value="Feminino">
+                <label for="ifem">Feminino</label>
+            </div>
+            <div class="radios">
+                <input type="radio" name="sexo" id="ioutro" value="Outro">
+                <label for="ioutro">Outro</label>
+            </div>
+            
+
+            <label for="iobs">Observações:</label>
+            <textarea name="obs" id="iobs"></textarea>
+
+            <label for="iemail">E-mail:</label>
+            <input type="email" name="email" id="iemail" required>
+
+            <label for="isenha">Senha:&nbsp;</label>
+            <input type="password" name="senha" id="isenha" minlength="8" required>
+
+            <label for="isenhaC">Confirmar Senha:</label>
+            <input type="password" name="senhaC" id="isenhaC" minlength="8" required>
+
+            
+            <button type="submit">Cadastrar</button>
+            
+            <button type="reset">Limpar</button>
+        </form>
+    </div>
+</body>
+</html>
